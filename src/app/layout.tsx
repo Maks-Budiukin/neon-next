@@ -27,11 +27,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col h-[100dvh]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col h-[100dvh] `}
       >
         <PageHeader />
 
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 bg-zinc-800">{children}</main>
         
 
         <PageFooter />
