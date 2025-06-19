@@ -7,7 +7,7 @@ import SectionTitle from '../Title/SectionTitle'
 const ImageSection: React.FC<ImageSectionProps> = ({image, title, text}) => {
   return (
     <div className='md:flex even:flex-row-reverse items-center gap-12 my-12 w-full'>
-        <div className='rounded-full overflow-hidden border-8 basis-1/2 md:basis-1/3 max-md:max-w-[75%] aspect-square max-md:mx-auto max-md:mb-8'>
+        <div className='rounded-full overflow-hidden border-8 border-zinc-800 basis-1/2 md:basis-1/3 max-md:max-w-[75%] aspect-square max-md:mx-auto max-md:mb-8'>
             <img src={image} alt={title} className='w-full h-full object-center object-cover' />
         </div>
 
