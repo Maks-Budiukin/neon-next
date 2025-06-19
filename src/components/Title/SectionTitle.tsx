@@ -11,7 +11,7 @@ interface TitleProps {
 
 const SectionTitle: React.FC<TitleProps> = ({ variant = 'yellow', children, className }) => {
 
-    const baseClasses = 'text-7xl';
+    const baseClasses = 'text-5xl lg:text-6xl xl:text-7xl';
 
     const glowStyle = (variant: TitleVariant) => {
         switch (variant) {
