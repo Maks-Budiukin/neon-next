@@ -42,7 +42,7 @@ const SectionTitle: React.FC<TitleProps> = ({ variant = 'yellow', children, size
                 return '0 0 15px #006AE3, 0 0 10px #006AE3, 0 0 40px #006AE3'
 
             case 'purple':
-                return '0 0 40px #5d0ec0, 0 0 20px #5d0ec0, 0 0 60px #5d0ec0'
+                return '0 0 20px #5d0ec0, 0 0 10px #5d0ec0, 0 0 60px #5d0ec0'
         }
     }
 
