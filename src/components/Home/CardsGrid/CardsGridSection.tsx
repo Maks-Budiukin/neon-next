@@ -44,7 +44,7 @@ const CardsGridSection = () => {
 ];
 
   return (
-    <div className='bg-zinc-800 bg-gradient-to-r from-transparent from-50% to-zinc-900 to-70% py-12'>
+    <div className='bg-zinc-800 bg-gradient-to-r from-transparent from-50% to-zinc-900 to-70% pt-12 pb-24'>
        <div className='container px-4 md:px-5 mx-auto'>
          <SectionTitle className='text-center mb-12' variant='blue'>Random Cards</SectionTitle>
          <CardsGrid cards={cards} />
