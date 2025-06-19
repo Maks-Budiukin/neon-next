@@ -10,7 +10,7 @@ interface TitleProps {
 
 const PageTitle: React.FC<TitleProps> = ({ variant = 'yellow', children, className }) => {
 
-    const baseClasses = 'text-7xl';
+    const baseClasses = 'text-center text-5xl md:text-6xl lg:text-7xl xl:text-8xl';
 
     const glowStyle = (variant: TitleVariant) => {
         switch (variant) {

@@ -6,11 +6,12 @@ type ButtonVariants = 'yellow' | 'yellow-secondary' | 'blue' | 'blue-secondary' 
 interface ButtonProps {
     label: string;
     variant?: ButtonVariants
+    className?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ label, variant = 'yellow' }) => {
+const Button: React.FC<ButtonProps> = ({ label, variant = 'yellow', className }) => {
 
-    const baseClasses = 'px-4 py-2 rounded-xl border  duration-200 cursor-pointer min-w-48';
+    const baseClasses = 'px-4 py-2 rounded-xl border duration-200 cursor-pointer';
 
     const variantClasses = (variant: ButtonVariants) => {
         switch (variant) {
@@ -35,7 +36,7 @@ const Button: React.FC<ButtonProps> = ({ label, variant = 'yellow' }) => {
     }
 
     return (
-        <button type='button' className={clsx(baseClasses, variantClasses(variant))}>{label}</button>
+        <button type='button' className={clsx(baseClasses, variantClasses(variant), className)}>{label}</button>
     )
 }
 

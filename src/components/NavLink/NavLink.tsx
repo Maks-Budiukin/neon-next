@@ -15,7 +15,7 @@ const NavLink: React.FC<NavLinkProps> = ({ href, children, className, activeClas
     const pathname = usePathname();
     const isActive = pathname === href;
 
-    const baseClasses = 'block py-4 px-3 text-amber-200 hover:text-amber-400 duration-200';
+    const baseClasses = 'block min-w-24 py-4 px-3 text-amber-200 hover:text-amber-400 text-center duration-200';
 
     return (
         <Link href={href} className={clsx(baseClasses, isActive && activeClassName, className)}>{children}</Link>

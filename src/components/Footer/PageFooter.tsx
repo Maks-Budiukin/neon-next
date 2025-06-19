@@ -10,7 +10,7 @@ import Address from '../Icons/Address'
 const PageFooter = () => {
   return (
     <footer className='bg-zinc-900'>
-        <div className='container mx-auto grid grid-cols-3 py-4'>
+        <div className='container px-4 md:px-5 mx-auto grid grid-cols-3 py-4'>
             <div className='col-span-1 text-amber-200'>
                 <p className='font-semibold py-2 border-b mb-2'>Contacts</p>
                 <ul>

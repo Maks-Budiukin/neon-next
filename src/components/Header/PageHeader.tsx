@@ -8,7 +8,7 @@ import NavLink from '@/components/NavLink/NavLink'
 const PageHeader = () => {
   return (
     <header className='bg-zinc-900'>
-      <div className='container mx-auto flex justify-between items-center'>
+      <div className='container px-4 md:px-5 mx-auto flex justify-between items-center'>
         <div>
           <Image src="/logo/logo.webp" width={48} height={48} alt="Site Logo" />
         </div>
