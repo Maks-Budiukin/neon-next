@@ -11,11 +11,11 @@ const ContactsSection = () => {
             <PageTitle variant='purple' className='mb-12'>Contact Us</PageTitle>
 
             <div className='flex items-start'>
-                <div className='relative w-full h-auto basis-1/2 aspect-[3/4] border-12 border-zinc-900'>
+                <div className='relative w-full h-auto basis-2/3 lg:basis-1/2 aspect-[3/4] border-12 border-zinc-900'>
                     <Image src={'/images/3.webp'} alt={''} fill className="object-cover" />
                 </div>
 
-                <div className='basis-1/2'>
+                <div className='basis-1/3 lg:basis-1/2'>
                     <ContactsForm />
                 </div>
                 

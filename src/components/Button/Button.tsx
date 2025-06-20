@@ -1,5 +1,6 @@
 import React from 'react'
 import clsx from 'clsx';
+import type { ButtonHTMLAttributes } from 'react'
 
 type ButtonVariants = 'yellow' | 'yellow-secondary' | 'blue' | 'blue-secondary' | 'purple' | 'purple-secondary'
 
@@ -7,9 +8,11 @@ interface ButtonProps {
     label: string;
     variant?: ButtonVariants
     className?: string;
+    type?: ButtonHTMLAttributes<HTMLButtonElement>['type'],
+    disabled?: boolean
 }
 
-const Button: React.FC<ButtonProps> = ({ label, variant = 'yellow', className }) => {
+const Button: React.FC<ButtonProps> = ({ label, variant = 'yellow', className, type = 'button', disabled = false }) => {
 
     const baseClasses = 'px-4 py-2 rounded-xl border duration-200 cursor-pointer';
 
@@ -36,7 +39,7 @@ const Button: React.FC<ButtonProps> = ({ label, variant = 'yellow', className })
     }
 
     return (
-        <button type='button' className={clsx(baseClasses, variantClasses(variant), className)}>{label}</button>
+        <button disabled={disabled} type={type} className={clsx(baseClasses, variantClasses(variant), className, disabled && 'opacity-40 pointer-events-none')}>{label}</button>
     )
 }
 
