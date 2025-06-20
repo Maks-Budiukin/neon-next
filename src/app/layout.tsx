@@ -1,18 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Asap } from "next/font/google";
 import "./globals.css";
 import PageHeader from "@/components/Header/PageHeader";
 import PageFooter from "@/components/Footer/PageFooter";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const asap = Asap({
+  weight: '400',
+  subsets: ['latin'],
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -27,12 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col h-[100dvh] `}
+        className={`${asap.className} antialiased flex flex-col h-[100dvh] `}
       >
         <PageHeader />
 
-        <main className="flex-1 bg-zinc-800">{children}</main>
-        
+        <main className="flex-1 bg-zinc-800">{children}</main>        
 
         <PageFooter />
       </body>
